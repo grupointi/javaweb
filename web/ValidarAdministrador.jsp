@@ -1,4 +1,5 @@
- <% 
+ <%@page import="clases.Usuario"%>
+<% 
              HttpSession sesion= request.getSession();
              Usuario miUsuario=(Usuario) sesion.getAttribute("usuario");
              if(miUsuario==null){
